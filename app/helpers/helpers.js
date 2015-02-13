@@ -10,6 +10,7 @@ export default Ember.Handlebars.helper('spotify-link', function(uri, title) {
         if (parts.length === 3 && parts[0] === "spotify") {
             return "http://open.spotify.com/" + parts[1] + "/" + parts[2];
         }
+        
         return uri;
     };
 

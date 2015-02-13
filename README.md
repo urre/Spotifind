@@ -73,6 +73,7 @@ Information coming...
 
 ## Todo
 
++ [ ]: Output info in the browser, make templates
++ [ ]: Allow Google Web fonts domain (environment.js -> contentSecurityPolicy)
 + [x]: Setup basic routes and controllers
-+ [ ]:
 + [x]: Store searches in local storage

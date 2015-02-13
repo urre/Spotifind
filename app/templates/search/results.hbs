@@ -1,0 +1,29 @@
+<div id="results">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Artist</th>
+                <th>Album</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {{#each results}}
+                <tr>
+                    <td>{{spotify-link href name}}</td>
+                    <td>
+                        <ul class="artists">
+                        {{#each artist in artists}}
+                            <li>{{spotify-link artist.href artist.name}}</li>
+                        {{/each}}
+                        </ul>
+                    </td>
+                    <td>{{spotify-link album.href album.name}}</td>
+                    <td>{{format-time length}}</td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

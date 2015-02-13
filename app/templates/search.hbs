@@ -1,2 +1,16 @@
-{{input type="text" class="new-search" placeholder="Enter query..." value=newSearch insert-newline="newSearch" }}
-<button class="btn btn-primary btn-sm search-button" {{action "newSearch"}} {{bind-attr disabled=disabled}}>Search</button>
+{{input type="text" class="new-search" placeholder="Search..." value=newSearch insert-newline="newSearch" }}
+<button {{action "newSearch"}} {{bind-attr disabled=disabled}}>Search</button>
+
+<h4>Previous searches</h4>
+<ul>
+  {{#each model}}
+    {{#link-to "search.results" this }}
+      {{query}}
+      <button {{action "removeSearch" this }}>X</button>
+    {{/link-to}}
+  {{/each}}
+</ul>
+
+<hr>
+
+{{outlet}}
