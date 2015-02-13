@@ -95,6 +95,7 @@
     border-radius: 2px;
     border: none;
     transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    color: lighten($spotifind_primary, 25%);
     @media #{$breakpoint-lg} {
         font-size: 1.5em;
         padding: 1em 2em;

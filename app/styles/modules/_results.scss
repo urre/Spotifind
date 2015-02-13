@@ -1,7 +1,7 @@
 .results {
     font-size: 1rem;
     @media #{$breakpoint-lg} {
-        font-size: 2rem;    
+        font-size: 2rem;
     }
     .table-cell {
         padding: .5rem;
@@ -11,9 +11,23 @@
     }
 }
 
+.info {
+    background: white;
+    p > small {
+        font-size: .8rem;
+        color: lighten($spotifind_primary, 45%);
+    }
+}
+
+
+.track:nth-child(-n+10){
+    display:block;
+}
+
 .head {
     color: white;
     display: none;
+    padding: .5rem;
     background: lighten($spotifind_primary, 5%);
     @media #{$breakpoint-lg} {
         display: block;
@@ -22,6 +36,10 @@
 
 .track {
     transition: all 200ms ease;
+    display: none;
+    padding: .5rem;
+    border-bottom: 1px solid lighten($spotifind_primary, 15%);
+
 
     &:hover {
         background: lighten($spotifind_primary, 15%);
