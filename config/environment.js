@@ -4,8 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'spotifind',
     environment: environment,
-    baseURL: '/',
-    locationType: 'auto',
+    baseURL: '/spotifind',
+    locationType: 'hash,
     contentSecurityPolicy: {
       'default-src': "*",
       'script-src': "'self' 'unsafe-eval' 'unsafe-inline'", // Allow scripts from https://cdn.mxpnl.com
