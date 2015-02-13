@@ -73,7 +73,15 @@ Information coming...
 
 ## Todo
 
-+ [ ]: Output info in the browser, make templates
-+ [ ]: Allow Google Web fonts domain (environment.js -> contentSecurityPolicy)
++ [ ]: Limit results
++ [ ]: Show artist images from Google Image Search
++ [ ]: Icons
++ [ ]: Clear results list
++ [ ]: Buy domain
++ [ ]: Don't show previous searches if there isn't any (local storage cleared)
++ [ ]: Find out how to set environment.js baseURL differnt for production/development
++ [ ]: Link to Wikipedia, Discogs, All Music...
++ [x]: Output info in the browser, make templates
++ [x]: Allow Google Web fonts domain (environment.js -> contentSecurityPolicy)
 + [x]: Setup basic routes and controllers
 + [x]: Store searches in local storage
