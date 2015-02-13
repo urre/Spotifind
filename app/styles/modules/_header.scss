@@ -1,0 +1,114 @@
+.header {
+  background: $spotifind_primary;
+}
+
+.header__topper {
+    h1 {
+        color: white;
+        font-size: 3rem;
+    }
+    p {
+        color: white;
+        font-size: 1rem;
+    }
+}
+
+.header__searchfield {
+
+}
+
+.header {
+    &__searches {
+        background: lighten(black, 94%);
+        margin-top: 1em;
+        width: 100%;
+        &__previous {
+            @media #{$breakpoint-lg} {
+                width: 60%;
+                margin: 0 auto;
+            }
+        }
+        h4 {
+            display: block;
+            color: lighten($spotifind_primary, 25%);
+        }
+        ul {
+            margin-left: 0;
+            a {
+                float: left;
+                margin-right: .3em;
+                border-top-left-radius: 2px;
+                border-bottom-left-radius: 2px;
+                width: 100%;
+                margin-bottom: .3em;
+                @media #{$breakpoint-lg} {
+                    width: 33.333%;
+                }
+                font-size: .8em;
+                position: relative;
+                &:last-child {
+                    margin-right: 0;
+                }
+                padding: .5em 1em;
+                background: white;
+                transition: all 200ms ease;
+                color: lighten(black, 75%);
+                &:hover {
+                    background: darken($spotifind_primary, 5%);
+                }
+                &.active {
+                    background: darken($spotifind_spot, 5%);
+                    color: white;
+                }
+                button {
+                    transition: all 200ms ease;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 50px;
+                    background: lighten($spotifind_primary, 25%);
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    border-top-right-radius: 2px;
+                    border-bottom-right-radius: 2px;
+                    &:hover {
+                        background: darken($spotifind_spot, 15%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header__searchfield {
+  input {
+    box-sizing: border-box;
+    background: white;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    width: 100%;
+    padding: .5em 1em;
+    line-height: 2;
+    border-radius: 2px;
+    border: none;
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    @media #{$breakpoint-lg} {
+        font-size: 1.5em;
+        padding: 1em 2em;
+        width: 60%;
+    }
+    &:hover {
+
+    }
+    &:active,
+    &:focus {
+
+    }
+  }
+  button {
+    display: none;
+  }
+}

@@ -1,0 +1,42 @@
+.footer {
+
+    &__about,
+    &__more {
+        h4, p, li {
+            font-size: .7rem;
+        }
+        padding: 1rem;
+        @media #{$breakpoint-lg} {
+            padding: 4rem;
+            h4, p, li {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &__about {
+      background: $spotifind_spot;
+      a {
+          transition: all 200ms ease;
+          color: white;
+          border-bottom: 2px solid white;
+          &:hover {
+              color: $spotifind_primary;
+          }
+      }
+    }
+    &__more {
+      background: $spotifind_primary;
+      a {
+          transition: all 200ms ease;
+          color: white;
+          &:hover {
+              color: $spotifind_spot;
+          }
+      }
+    }
+    h4,
+    p {
+        color: white;
+    }
+}

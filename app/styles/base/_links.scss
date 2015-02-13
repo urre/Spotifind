@@ -1,0 +1,35 @@
+/* Links */
+a {
+    color: $spotifind_links;
+    text-decoration:none;
+    outline: none;
+    transition: all 400ms ease;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $spotifind_links;
+    }
+    &:active,
+    &:focus {
+        outline: none;
+    }
+    &:visited {
+        color: $spotifind_links;
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: $spotifind_links;
+        }
+    }
+}
+
+/* Addresses outline displayed oddly in Chrome */
+a:focus {
+    // outline: thin dotted;
+}
+
+/* Improves readability when focused and also mouse hovered in all browsers
+people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active {
+    outline: 0;
+}

@@ -16,5 +16,9 @@
     "bootstrap-sass-official": "~3.3.3",
     "fontawesome": "~4.3.0",
     "ember-localstorage-adapter": "~0.5.1"
+  },
+  "devDependencies": {
+    "basscss": "~4.2.4",
+    "jquery.sparkline": "git@github.com:gwatts/jquery.sparkline.git#~2.1.2"
   }
 }

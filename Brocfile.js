@@ -13,8 +13,9 @@ var app = new EmberApp({
     },
 });
 
-
 var pickFiles = require('broccoli-static-compiler');
+
+app.import('bower_components/jquery/dist/jquery.js');
 app.import('bower_components/ember-localstorage-adapter/localstorage_adapter.js');
 
 module.exports = app.toTree();

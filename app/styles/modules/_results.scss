@@ -1,0 +1,37 @@
+.results {
+    font-size: 1rem;
+    @media #{$breakpoint-lg} {
+        font-size: 2rem;    
+    }
+    .table-cell {
+        padding: .5rem;
+        @media #{$breakpoint-lg} {
+            padding: 2rem;
+        }
+    }
+}
+
+.head {
+    color: white;
+    display: none;
+    background: lighten($spotifind_primary, 5%);
+    @media #{$breakpoint-lg} {
+        display: block;
+    }
+}
+
+.track {
+    transition: all 200ms ease;
+
+    &:hover {
+        background: lighten($spotifind_primary, 15%);
+        a {
+            &:hover {
+                color: $spotifind_spot;
+            }
+        }
+    }
+    &__length {
+        color: white;
+    }
+}

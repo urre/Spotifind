@@ -1,29 +1,75 @@
-<div id="results">
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Artist</th>
-                <th>Album</th>
-                <th>Duration</th>
-            </tr>
-        </thead>
+<div id="results" class="results clearfix">
 
-        <tbody>
-            {{#each results}}
-                <tr>
-                    <td>{{spotify-link href name}}</td>
-                    <td>
-                        <ul class="artists">
-                        {{#each artist in artists}}
-                            <li>{{spotify-link artist.href artist.name}}</li>
-                        {{/each}}
-                        </ul>
-                    </td>
-                    <td>{{spotify-link album.href album.name}}</td>
-                    <td>{{format-time length}}</td>
-                </tr>
+  <div class="sm-col sm-col-12 md-col-12 lg-col-12 p3 head">
+    <div class="sm-col sm-col-4 md-col-4 lg-col-4">
+      <div class="table">
+        <div class="table-cell">
+          Song
+        </div>
+      </div>
+    </div>
+    <div class="sm-col sm-col-3 md-col-3 lg-col-3">
+      <div class="table">
+        <div class="table-cell">
+          Artist
+        </div>
+      </div>
+    </div>
+    <div class="sm-col sm-col-3 md-col-3 lg-col-3">
+      <div class="table">
+        <div class="table-cell">
+          Album
+        </div>
+      </div>
+    </div>
+    <div class="sm-col sm-col-1 md-col-1 lg-col-1">
+      <div class="table">
+        <div class="table-cell">
+          Length
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{#each results}}
+
+    <div class="sm-col sm-col-12 md-col-12 lg-col-12 p3 track">
+      <div class="sm-col sm-col-4 md-col-4 lg-col-4">
+        <div class="table">
+          <div class="table-cell">
+            {{spotify-link href name}}
+          </div>
+        </div>
+      </div>
+
+      <div class="sm-col sm-col-3 md-col-4 lg-col-3">
+        <div class="table">
+          <div class="table-cell">
+            {{#each artist in artists}}
+              {{spotify-link artist.href artist.name}}
             {{/each}}
-        </tbody>
-    </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="sm-col sm-col-3 md-col-3 lg-col-3">
+        <div class="table">
+          <div class="table-cell">
+            {{spotify-link album.href album.name}}
+          </div>
+        </div>
+      </div>
+
+      <div class="sm-col sm-col-1 md-col-1 lg-col-1 track__length">
+        <div class="table">
+          <div class="table-cell">
+            {{format-time length}}
+          </div>
+        </div>
+      </div>
+
+  </div>
+  {{/each}}
+
+
 </div>

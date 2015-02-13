@@ -1,15 +1,37 @@
 
 
-html {
-    font-family: "sans-serif";
-}
+/*-------------------------------------------------------------------
 
-body {
-    padding: 5em;
-    margin: 0 auto;
-    max-width: 70em;
-}
+BASSCSS
+http://www.basscss.com
+http://www.basscss.com/docs/
 
-ul {
-    padding-left: 0;
-}
+-------------------------------------------------------------------*/
+@import "../../bower_components/basscss/scss/defaults";
+@import "../../bower_components/basscss/scss/colors";
+@import "../../bower_components/basscss/scss/utility-layout";
+@import "../../bower_components/basscss/scss/base-reset";
+@import "../../bower_components/basscss/scss/base-typography";
+@import "../../bower_components/basscss/scss/grid";
+@import "../../bower_components/basscss/scss/table-object";
+@import "../../bower_components/basscss/scss/utility-white-space";
+@import "../../bower_components/basscss/scss/utility-typography";
+@import "../../bower_components/basscss/scss/utility-responsive-states";
+
+/*-------------------------------------------------------------------
+
+    Base
+
+-------------------------------------------------------------------*/
+@import "../../app/styles/base/colors";
+@import "../../app/styles/base/base";
+@import "../../app/styles/base/links";
+
+/*-------------------------------------------------------------------
+
+    Modules
+
+-------------------------------------------------------------------*/
+@import "../../app/styles/modules/header";
+@import "../../app/styles/modules/footer";
+@import "../../app/styles/modules/results";
