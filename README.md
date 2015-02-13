@@ -81,6 +81,7 @@ Information coming...
 + [ ]: Don't show previous searches if there isn't any (local storage cleared)
 + [ ]: Find out how to set environment.js baseURL differnt for production/development
 + [ ]: Link to Wikipedia, Discogs, All Music...
++ [ ]: Look into [Ember Charts](http://addepar.github.io/#/ember-charts/)
 + [x]: Output info in the browser, make templates
 + [x]: Allow Google Web fonts domain (environment.js -> contentSecurityPolicy)
 + [x]: Setup basic routes and controllers
