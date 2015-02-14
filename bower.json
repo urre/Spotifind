@@ -18,7 +18,6 @@
     "ember-localstorage-adapter": "~0.5.1"
   },
   "devDependencies": {
-    "basscss": "~4.2.4",
-    "jquery.sparkline": "git@github.com:gwatts/jquery.sparkline.git#~2.1.2"
+    "basscss": "~4.2.4"
   }
 }
