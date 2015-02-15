@@ -46,18 +46,8 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
-+ Run: `ember server`
++ `ember server`
 + Fire up a browser and visit [http://localhost:4200](http://localhost:4200).
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
 
 ### Deploying
 
@@ -73,16 +63,16 @@ Information coming...
 
 ## Todo
 
-- [ ]: Limit results
-- [ ]: Show artist images from Google Image Search
-- [ ]: Icons
-- [ ]: Clear results list
-- [ ]: Buy domain
-- [ ]: Don't show previous searches if there isn't any (local storage cleared)
-- [ ]: Find out how to set environment.js baseURL differnt for production/development
-- [ ]: Link to Wikipedia, Discogs, All Music...
-- [ ]: Look into [Ember Charts](http://addepar.github.io/#/ember-charts/)
-- [x]: Output info in the browser, make templates
-- [x]: Allow Google Web fonts domain (environment.js -> contentSecurityPolicy)
-- [x]: Setup basic routes and controllers
-- [x]: Store searches in local storage
+- [ ] Limit results
+- [ ] Show artist images from Google Image Search
+- [ ] Icons
+- [ ] Clear results list
+- [ ] Buy domain
+- [ ] Don't show previous searches if there isn't any (local storage cleared)
+- [ ] Find out how to set environment.js baseURL differnt for production/development
+- [ ] Link to Wikipedia, Discogs, All Music...
+- [ ] Look into [Ember Charts](http://addepar.github.io/#/ember-charts/)
+- [x] Output info in the browser, make templates
+- [x] Allow Google Web fonts domain (environment.js -> contentSecurityPolicy)
+- [x] Setup basic routes and controllers
+- [x] Store searches in local storage
