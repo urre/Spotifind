@@ -1,6 +1,6 @@
 # Spotifind
 
-## [Demo](labs.urre.me/spotifind/)
+## [Demo](http://labs.urre.me/spotifind/)
 
 [Urban Sandén](http://urre.me) on Kollegorna PDD 12 feb 2015
 
