@@ -5,16 +5,25 @@
 .header__topper {
     h1 {
         color: white;
-        font-size: 3rem;
+        font-size: 2rem;
+        @media #{$breakpoint-lg} {
+            font-size: 3rem;
+        }
     }
     p {
         color: white;
-        font-size: 1rem;
+        font-size: .7rem;
+        @media #{$breakpoint-lg} {
+            font-size: 1rem;
+        }
     }
 }
 
 .header__searchfield {
-
+    padding: 1rem;
+    @media #{$breakpoint-lg} {
+        padding: 2rem;
+    }
 }
 
 .header {
@@ -22,6 +31,10 @@
         background: lighten(black, 94%);
         margin-top: 1em;
         width: 100%;
+        padding-bottom: .5rem;
+        @media #{$breakpoint-lg} {
+            padding-bottom: 2rem;
+        }
         &__previous {
             @media #{$breakpoint-lg} {
                 width: 60%;
@@ -89,7 +102,7 @@
     display: block;
     margin: 0 auto;
     outline: none;
-    width: 100%;
+    width: 90%;
     padding: .5em 1em;
     line-height: 2;
     border-radius: 2px;
@@ -98,7 +111,7 @@
     color: lighten($spotifind_primary, 25%);
     @media #{$breakpoint-lg} {
         font-size: 1.5em;
-        padding: 1em 2em;
+        padding: .8em 1.6em;
         width: 60%;
     }
     &:hover {

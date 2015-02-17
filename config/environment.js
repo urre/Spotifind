@@ -8,7 +8,7 @@ module.exports = function(environment) {
     locationType: 'history',
     contentSecurityPolicy: {
         'script-src': "'self' 'unsafe-eval' http://*:35729",
-          'font-src': "'self' http://fonts.gstatic.com",
+          'font-src': "'self' http://fonts.gstatic.com", // Support Google Web fonts
           'connect-src': "'self' *",
           'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com",
     },
