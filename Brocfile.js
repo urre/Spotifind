@@ -12,7 +12,7 @@ var app = new EmberApp({
         cascade: false
     },
     fingerprint: {
-    prepend: 'spotifind-assets.s3.amazonaws.com'
+    prepend: 'spotifindassets.s3-website-us-east-1.amazonaws.com'
   }
 });
 
