@@ -1,0 +1,17 @@
+{
+  "development": {
+    "store": {
+      "type": "S3",
+      "accessKeyId": "AKIAIUTNORA2HIAVKCZQ",
+      "secretAccessKey": "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",
+      "bucket": "spotifind-index"
+    },
+
+    "assets": {
+      "type": "s3",
+      "accessKeyId": "AKIAIUTNORA2HIAVKCZQ",
+      "secretAccessKey": "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",
+      "bucket": "spotifind-assets"
+    }
+  }
+}

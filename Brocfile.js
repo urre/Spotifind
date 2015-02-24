@@ -11,6 +11,9 @@ var app = new EmberApp({
         browsers: ['last 2 versions'],
         cascade: false
     },
+    fingerprint: {
+    prepend: 'spotifind-assets.s3.amazonaws.com'
+  }
 });
 
 var pickFiles = require('broccoli-static-compiler');
