@@ -3,17 +3,17 @@
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 var app = new EmberApp({
-    minifyCSS: {
-       enabled: false,
-       options: {}
-     },
-    autoprefixer: {
-        browsers: ['last 2 versions'],
-        cascade: false
-    },
-    fingerprint: {
-    prepend: 'spotifindassets.s3-website-us-east-1.amazonaws.com'
-  }
+	fingerprint: {
+		prepend: 'spotifindassets.s3-website-us-east-1.amazonaws.com'
+	},
+	minifyCSS: {
+		enabled: true,
+		options: {}
+	},
+	autoprefixer: {
+		browsers: ['last 2 versions'],
+		cascade: false
+	},
 });
 
 var pickFiles = require('broccoli-static-compiler');
