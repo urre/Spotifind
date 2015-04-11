@@ -50,6 +50,7 @@ Information coming...
 - [x] Allow Google Web fonts domain (environment.js -> contentSecurityPolicy)
 - [x] Setup basic routes and controllers
 - [x] Store searches in local storage
+- [ ] [Use loading substances](http://emberjs.com/guides/routing/loading-and-error-substates/)
 - [ ] Deploy on AWS
 - [ ] Limit results
 - [ ] Show artist images from Google Image Search
