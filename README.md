@@ -2,20 +2,18 @@
 
 ## [Demo](http://labs.urre.me/spotifind/)
 
-[Urban Sandén](http://urre.me) on [Kollegorna](http://kollegorna.se) PDD 12 feb 2015.
+Built during the [Kollegorna](http://kollegorna.se) Personal Development Days 12 feb 2015.
 
 ## What?
 
 A simple Ember app where you can search for music from Spotify. Display info about artist, album, track and track time. Display in a visual way with images and (maybe) show graphs displaying metadata such as year/track time.
 
 ## Tools
-+ EmberJS
-+ Ember cli
-+ Github Pages
++ [Ember.js](http://emberjs.com/)
++ [Ember CLI](http://www.ember-cli.com/)
 + Google Image Search API
-+ Spotify Metadata API
-+ Wikipedia API (maybe)
-+ BASSCSS
++ [Spotify Metadata API](https://developer.spotify.com/web-api/)
++ [BASSCSS](basscss.com)
 
 ## You'll need
 
@@ -48,6 +46,10 @@ Information coming...
 
 ## Todo
 
+- [x] Output info in the browser, make templates
+- [x] Allow Google Web fonts domain (environment.js -> contentSecurityPolicy)
+- [x] Setup basic routes and controllers
+- [x] Store searches in local storage
 - [ ] Deploy on AWS
 - [ ] Limit results
 - [ ] Show artist images from Google Image Search
@@ -58,7 +60,3 @@ Information coming...
 - [ ] Sset environment.js baseURL differnt for production/development
 - [ ] Link to Wikipedia, Discogs, All Music...
 - [ ] Look into [Ember Charts](http://addepar.github.io/#/ember-charts/)
-- [x] Output info in the browser, make templates
-- [x] Allow Google Web fonts domain (environment.js -> contentSecurityPolicy)
-- [x] Setup basic routes and controllers
-- [x] Store searches in local storage
